@@ -22,7 +22,7 @@ public class TestParallel {
 		capabilities.setCapability(FirefoxDriver.BINARY, new File("C:\\Program Files(x86)\\Mozilla Firefox\\firefox.exe").getAbsolutePath());
 		capabilities.setJavascriptEnabled(true);
 		
-		driver = new RemoteWebDriver(new URL("http://192.168.75.1:5555/wd/hub"), capabilities);
+		driver = new RemoteWebDriver(new URL("http://192.168.2.7:5555/wd/hub"), capabilities);
 		
 		driver.get("http://google.com");
 		System.out.println(driver.getTitle());

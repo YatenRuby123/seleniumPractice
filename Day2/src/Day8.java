@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Day8 {
@@ -10,7 +11,8 @@ public class Day8 {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/home/supershuttle/Downloads/wires");
+		WebDriver driver = new MarionetteDriver();
 		driver.get("http://www.hdfcbank.com/");
 		Actions abc = new Actions(driver);
 		//driver.manage().window().maximize();

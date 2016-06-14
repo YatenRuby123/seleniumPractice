@@ -1,12 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.MarionetteDriver;
+
 
 public class Day4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/home/supershuttle/Downloads/wires");
+		WebDriver driver = new MarionetteDriver();
 		driver.get("https://www.facebook.com/");
 /*		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("test@testing.com");
 //		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("abcdefgh");

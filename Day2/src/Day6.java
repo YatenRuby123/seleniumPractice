@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Day6 {
@@ -12,7 +13,8 @@ public class Day6 {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/home/supershuttle/Downloads/wires");
+		WebDriver driver = new MarionetteDriver();
 		driver.get("http://www.etihad.com/en-us/");
 		//driver.findElement(By.xpath(".//*[@id='frm_oneWayFlight']")).click();
 		List<WebElement> abc = driver.findElements(By.xpath("//input[@type='radio']"));
