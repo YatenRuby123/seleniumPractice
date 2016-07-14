@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2289" started-at="2016-06-28T02:01:40Z" finished-at="2016-06-28T02:01:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2289" started-at="2016-06-28T02:01:40Z" finished-at="2016-06-28T02:01:42Z">
+      <class name="testSuite.ValidateTitle">
+        <test-method status="PASS" signature="title()[pri:0, instance:testSuite.ValidateTitle@735b5592]" name="title" duration-ms="2262" started-at="2016-06-27T19:01:40Z" finished-at="2016-06-27T19:01:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title -->
+      </class> <!-- testSuite.ValidateTitle -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
